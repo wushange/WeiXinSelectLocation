@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/title_style">
+
+    <include layout="@layout/include_back_button_layout" />
+
+    <TextView
+        android:id="@+id/include_head_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="标题"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/include_left_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:padding="10dp"
+        android:text="左侧文字"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/include_head_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:padding="5dp"
+        android:src="@mipmap/back"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/include_right_text"
+        android:layout_width="wrap_content"
+        android:layout_height="55dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="文字"
+        android:textColor="@color/darkgrey"
+        android:textSize="16sp"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/include_right_btn_two"
+        style="@style/Widget.AppCompat.ActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toStartOf="@+id/include_right_btn"
+        android:gravity="center"
+        android:src="@mipmap/back"
+        android:visibility="invisible"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/include_right_btn"
+        style="@style/Widget.AppCompat.ActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:gravity="center"
+        android:src="@mipmap/back"
+        android:visibility="invisible"
+        tools:ignore="ContentDescription" />
+
+</RelativeLayout>

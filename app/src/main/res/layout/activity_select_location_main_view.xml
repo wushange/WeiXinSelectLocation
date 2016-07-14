@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_sel_location"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/include_app_title" />
+
+    <com.tencent.tencentmap.mapsdk.map.MapView
+        android:id="@+id/mapview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"></com.tencent.tencentmap.mapsdk.map.MapView>
+
+    <com.jude.easyrecyclerview.EasyRecyclerView
+        android:id="@+id/poi_list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        app:layout_progress="@layout/loading_view_layout"></com.jude.easyrecyclerview.EasyRecyclerView>
+</LinearLayout>
